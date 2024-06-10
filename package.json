@@ -1,0 +1,16 @@
+{
+  "name": "electricity-bill-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "npx tailwindcss -i ./static/css/tailwindcss/input.css -o ./static/css/tailwindcss/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

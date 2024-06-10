@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mepco Web Bill</title>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<link rel="stylesheet" href="/static/css/tailwindcss/output.css">
+</head>
+<body class="bg-slate-100 dark:bg-slate-900">
+    <main class="px-5">
+        <h1 class="text-center text-2xl font-bold dark:text-white my-7"><span class="text-red-500">MEPCO</span> Electricity Bill Generator</h1>
+        <form class="rounded-lg flex flex-col gap-4 p-5 mx-auto bg-white shadow-md dark:bg-slate-800 md:max-w-screen-lg" action="/search" method="get">
+            <label for="ref_no_input" class="dark:text-white text-xl">Enter valid 13 digit reference number</label>
+            <input required id="ref_no_input" type="text" name="ref_no" class="flex-1 p-4 outline-none border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-black" placeholder="XXXXXXXXXXXXX">
+            <button type="submit" class="bg-red-600 hover:bg-red-700 transition-all ease-in-out duration-500 text-white rounded-lg p-2 font-bold">Check Bill</button>
+        </form>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/7d3f73a100.js" crossorigin="anonymous"></script>
+</html>
